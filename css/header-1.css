@@ -1,0 +1,201 @@
+main {
+  flex: 1;
+  margin-top: 400px; /* Ajusta este valor según el espacio deseado entre el carrusel y el contenido */
+  padding: 20px; /* Ajusta este valor según el espacio deseado alrededor del contenido */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ajusta el valor según tus necesidades */
+  
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 60px;
+  background-color: #3d5a7f;
+  /* Otros estilos de diseño de tu barra de navegación */
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  /* Otros estilos de diseño para los enlaces del navbar */
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  /* Otros estilos de diseño para los enlaces del navbar */
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(61, 90, 127, 0.5);
+  padding: 10px;
+  width: 100%;
+  max-height: 300px; /* Establecer una altura máxima para el menú desplegable */
+  overflow-y: auto; /* Habilitar el desplazamiento si el menú desplegable se desborda */
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: center;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 100%;
+    max-height: 300px; /* Establecer una altura máxima para el menú desplegable */
+    overflow-y: auto; 
+    
+  }
+  .navbar .menu {
+    position:right ;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+
+
+    /* carrusel de imagenes */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    .mySlides {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .mySlides img {
+      width: 85%;
+      max-height: 350px; /*opcional: para restringir también la altura*/
+    }
+    
+    
+    /* Estilos para los botones */
+    /* Estilos para los botones */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(-50%); /* Añadir esto */
+}
+
+/* Posicionar botón de retroceso a la izquierda */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Posicionar botón de avance a la derecha */
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Ajuste para centrar verticalmente */
+.slideshow-container {
+  margin-top: 180px;
+  position: relative;
+  z-index: 1
+  
+}
+
+/* Ajuste para centrar verticalmente */
+.mySlides img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(87, 84, 84, 0.8);
+}
+
+.cuadro-texto {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin-top: 500px; /* ajustar valor para separación deseada */
+  font-family: x-large;
+  margin-bottom: 100px;
+}
+
+.img-mision1  {
+  width: 150%;
+  height: 150%;
+  margin-top: 500px;
+}
+
+#vision {
+  scroll-margin-top: 150px; /* Ajusta el valor según tu preferencia */
+}
+#mision {
+  scroll-margin-top: 150px; /* Ajusta el valor según tu preferencia */
+}
+
+#contactos {
+  scroll-margin-top: 150px; /* Ajusta el valor según tu preferencia */
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Headers - 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/header-1.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
+  </head>
+  <body id="inicio">
+    <div class="container">
+      
+    <!-- cabezera de inicio -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./imagenes/logo inplastvivblack.png" style="width: 50%; height: auto;" alt="Logo" >
+      </div>
+      <div class="menu">
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#mision">Mision</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+          <li><a href="./menutienda.html">Tienda</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <!-- final cabezera -->
+    
+  <div>
+    <div class="slideshow-container">
+      
+      <div  class="mySlides fade">
+        <img src="carrete/img1.jpg" style="border-radius: 30px">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="carrete/img2.jpg" style="border-radius: 30px">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="carrete/img3.jpg" style="border-radius: 30px">
+      </div>
+    
+      <div class="mySlides fade" >
+        <img src="carrete/img4.jpg" style="border-radius: 30px">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="carrete/img5.jpg" style="border-radius: 30px">
+      </div>
+    
+      <!-- Botones para avanzar y retroceder -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+    
+  
+
+    
+<!--  mision y vision -->
+<main>
+<div id="mision" style="background-color: rgb(240, 240, 240); margin-top: 8%; width: 75%; height: 270px; padding: 2%; margin-left: 10%; font-size: 2.5vh; line-height: 1.5; font-family: x-large; display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <p style="color:red;">Mision</p>
+    <p>Nuestra misión es satisfacer las necesidades de nuestros clientes con productos de calidad, y excelencia en servicio de entrega.</p>
+  </div>
+  <img src="./imagenes/mision.jpg" style="width: 40%; height: auto; padding: 2%; margin-left: 2%; border-radius: 5vh;">
+</div>
+
+<div id="vision" style="background-color: rgb(240, 240, 240); margin-top: 20%; width: 75%; height: 270px; padding: 2%; margin-left: 10%; font-size: 2.5vh; line-height: 1.5; font-family: x-large; display: flex; align-items: center;">
+  <img src="./imagenes/vision.jpg" style="width: 40%; height: auto; padding: 2%; margin-right: 2%; border-radius: 5vh;">
+  <div style="flex: 1; text-align: right;">
+    <p style="color:red;">Vision</p>
+    <p>Convertirnos en la empresa que da solución a nuestros clientes y futuros clientes en la búsqueda de mallas y suministros por medio del conocimiento de las necesidades nuestro mercado.</p>
+  </div>
+</div>
+    </div>
+    </main>
+
+
+
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    background-color: #3d5a7f;
+    padding: 60px;
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icon {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+</style>
+
+<body>
+  <main>
+    <!-- Contenido principal de la página -->
+  </main>
+
+  <footer  id="contactos" style="margin-top: 200px;">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/carlitosv.chinbop" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/inplastviv/" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=593997096445" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div style="margin-top: 30px;">
+    </div>
+  </footer>
+  
+
+</body>
+
+    
+    
+
+  
+    
+
+  
+    <script src="js/slider.js"></script>
+    <script src="js/navarbotones.js"></script>
+
+  </body>
+</html>
+
+

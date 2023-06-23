@@ -24,7 +24,7 @@
           <span></span>
         </div>
         <ul class="nav-links">
-          <li><a href="#inicio">Inicio/prueba</a></li>
+          <li><a href="#inicio">Inicio</a></li>
           <li><a href="#mision">Mision</a></li>
           <li><a href="#vision">Vision</a></li>
           <li><a href="#contactos">Contactos</a></li>
@@ -70,7 +70,7 @@
     
 <!--  mision y vision -->
 <main>
-<div id="mision" style="background-color: rgb(240, 240, 240); margin-top: 8%; width: 75%; height: 270px; padding: 2%; margin-left: 10%; font-size: 2.5vh; line-height: 1.5; font-family: x-large; display: flex; align-items: center;">
+<div id="mision" style="background-color: rgb(240, 240, 240); margin-top: 8%; width: 75%; height: 270px; padding: 2%; margin-left: 10%; font-size: 3.5vh; line-height: 1.5; font-family: x-large; display: flex; align-items: center;">
   <div style="flex: 1;">
     <p style="color:red;">Mision</p>
     <p>Nuestra misión es satisfacer las necesidades de nuestros clientes con productos de calidad, y excelencia en servicio de entrega.</p>
@@ -78,7 +78,7 @@
   <img src="./imagenes/mision.jpg" style="width: 40%; height: auto; padding: 2%; margin-left: 2%; border-radius: 5vh;">
 </div>
 
-<div id="vision" style="background-color: rgb(240, 240, 240); margin-top: 20%; width: 75%; height: 270px; padding: 2%; margin-left: 10%; font-size: 2.5vh; line-height: 1.5; font-family: x-large; display: flex; align-items: center;">
+<div id="vision" style="background-color: rgb(240, 240, 240); margin-top: 20%; width: 75%; height: 270px; padding: 2%; margin-left: 10%; font-size: 3.5vh; line-height: 1.5; font-family: x-large; display: flex; align-items: center;">
   <img src="./imagenes/vision.jpg" style="width: 40%; height: auto; padding: 2%; margin-right: 2%; border-radius: 5vh;">
   <div style="flex: 1; text-align: right;">
     <p style="color:red;">Vision</p>
@@ -87,6 +87,8 @@
 </div>
     </div>
     </main>
+<div id="map"></div>
+
 
 
 
@@ -148,7 +150,12 @@
   
     <script src="js/slider.js"></script>
     <script src="js/navarbotones.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhQXTzzMAb-p8Hm6QF_IBcR-FFQzxYivg"></script>
+    <script src="js/mapa.js"></script>
+    <script>
+      initMap();
+    </script>
+    
   </body>
 </html>
 

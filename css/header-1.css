@@ -40,7 +40,10 @@ html{
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
+  font-family: Segoe UI;
+  font-weight: bold;
+  
   /* Otros estilos de diseño para los enlaces del navbar */
 }
 

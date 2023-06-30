@@ -15,6 +15,7 @@ html{
   scroll-behavior: smooth;
 }
 .navbar {
+  width:103.5%;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -119,8 +120,8 @@ html{
     }
     
     .mySlides img {
-      width: 85%;
-      max-height: 350px; /*opcional: para restringir también la altura*/
+      width: 650%;
+      max-height: 400px; /*opcional: para restringir también la altura*/
     }
     
     

@@ -61,28 +61,26 @@
                             <p>Total:</p>
                             <p id="total">$3000</p>
                         </div>
-                        <button id="openFormButton"  class="carrito-acciones-comprar" >Cotizar</button>
-                    </div>
-                    <div id="formContainer" class="form-register">
+                        <button id="btn-abrir-modal"  class="carrito-acciones-cotizar">Cotizar</button>
+                        
+                        <dialog id="modal">   
+                        <div class="form-register">  
+                            <form method="dialog" action="https://formsubmit.co/victor.ramosl@outlook.com" method="POST">
                         <h4>Datos</h4>
                         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre(personal/empresa)">
                         <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Correo electronico">
-                        <input class="controls" type="email" name="correo" id="correo" placeholder="telefono">
-                        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ciudad">
+                        <input class="controls" type="number" name="correo" id="correo" placeholder="telefono">
+                        <input class="controls" type="text" name="ciudad" id="contrasena" placeholder="Ciudad">
                         <input class="botons" type="submit" value="Enviar">
-                    </div>
-                
-                    <script>
-                        document.getElementById("openFormButton").addEventListener("click", function() {
-                            var formContainer = document.getElementById("formContainer");
-                            if (formContainer.style.display === "none") {
-                                formContainer.style.display = "block";
-                            } else {
-                                formContainer.style.display = "none";
-                            }
-                            
-                        });
-                    </script>
+                        <input type="hidden" name="_next" value="https://victorralo.github.io/prueba-hosting-gratis/">
+                        <input type="hidden" name="_captcha" value="false">
+                            </form>
+                        </div>
+                       </dialog>
+                    
+                    
+                </div>
+                    
                 </div>
 
                 <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
@@ -95,5 +93,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/ventanamodal.js"></script>
 </body>
 </html>

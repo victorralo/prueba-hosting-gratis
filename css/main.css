@@ -276,7 +276,7 @@ main {
     gap: 1rem;
 }
 
-.carrito-acciones-comprar {
+.carrito-acciones-cotizar {
     border: 0;
     background-color: var(--clr-main);
     padding: 1rem;
@@ -410,8 +410,6 @@ main {
 
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -423,11 +421,10 @@ main {
   }
   
   .form-register {
-    width: 400px;
+    width: 100%;
     background: #24303c;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -478,3 +475,17 @@ main {
     font-size: 16px;
   }
   
+  
+  dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5%;
+}
+
+#modal::backdrop{
+    background-color: rgba(0, 0, 0, .55);
+}

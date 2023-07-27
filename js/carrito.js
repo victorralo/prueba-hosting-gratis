@@ -140,3 +140,30 @@ function comprarCarrito() {
     contenedorCarritoComprado.classList.remove("disabled");
 
 }
+
+// ... (código existente de carrito.js)
+
+const botonEnviar = document.querySelector("#btn-abrir-modal");
+
+botonEnviar.addEventListener("click", enviarPedido);
+function enviarPedido() {
+    const datosCliente = {
+        nombres: document.querySelector("#nombres").value,
+        correo: document.querySelector("#apellidos").value,
+        telefono: document.querySelector("#correo").value,
+        ciudad: document.querySelector("#contrasena").value,
+    };
+
+    // Almacenar datos del cliente y del carrito en el LocalStorage
+    const pedido = {
+        cliente: datosCliente,
+        productos: productosEnCarrito,
+    };
+
+    localStorage.setItem("pedido", JSON.stringify(pedido));
+
+    // Redirigir al panel de administrador
+    window.location.href = "administrador.html";
+}
+
+// ...

@@ -13,7 +13,9 @@
 
     <div class="wrapper">
         <header class="header-mobile">
+            <a href="./index.html">
             <h1 class="logo">Inplastviv</h1>
+        </a>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
@@ -22,9 +24,11 @@
             <button class="close-menu" id="close-menu">
                 <i class="bi bi-x"></i>
             </button>
+            <a href="./index.html">
             <header>
                 <img src="imagenes/logo inplastvivblack.png" alt="Logo de Inplastviv" width="275"  style="margin-left: -35px";>       
             </header>
+        </a>
             <nav>
                 <ul>
                     <li>
@@ -44,7 +48,6 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Inplastviv</h2>
             <div class="contenedor-carrito">
                 <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
 
@@ -67,16 +70,17 @@
                         <div class="form-register">  
                             <form>
                         <h4>Datos</h4>
-                        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre(personal/empresa)">
-                        <input class="controls" type="email" name="correo" id="apellidos" placeholder="Correo electronico">
-                        <input class="controls" type="number" name="telefono" id="correo" placeholder="telefono">
-                        <input class="controls" type="text" name="ciudad" id="contrasena" placeholder="Ciudad">
-                        <input class="botons" type="submit" value="Enviar">
+                        <input oninput="capitalizeFirstLetter(this)" class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre(personal/empresa)" required>
+                        <input class="controls" type="email" name="correo" id="mail" placeholder="Correo electronico" required>
+                        <input class="controls" type="tel" name="telefono" pattern="[0-9]*" inputmode="numeric" id="telefono" placeholder="telefono" required>
+                        <input oninput="capitalizeFirstLetter(this)" class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+                        <input class="controls" type="date" name="fecha" id="fecha" required>
+                        <a href="#" class="botons" onclick=" guardar() "> ENVIAR</a>
                         <input type="hidden" name="_next" value="https://n9.cl/axvzt">
                         <input type="hidden" name="_captcha" value="false">
                             </form>
                         </div>
-                       </dialog>
+                        </dialog>
                     
                     
                 </div>
@@ -89,10 +93,18 @@
         </main>
     </div>
     
+
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+    <script src="./js/configuracion.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/guardar.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/carrito.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/ventanamodal.js"></script>
+    <script src="./js/mayuscula.js"></script>
+
 </body>
 </html>

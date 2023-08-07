@@ -1,3 +1,7 @@
+window.addEventListener('load', () => {
+    localStorage.removeItem('productos-en-carrito');
+    cargarProductosCarrito(); // Actualizar la visualización del carrito
+});
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
@@ -141,29 +145,17 @@ function comprarCarrito() {
 
 }
 
-// ... (código existente de carrito.js)
-
-const botonEnviar = document.querySelector("#btn-abrir-modal");
-
-botonEnviar.addEventListener("click", enviarPedido);
-function enviarPedido() {
-    const datosCliente = {
-        nombres: document.querySelector("#nombres").value,
-        correo: document.querySelector("#apellidos").value,
-        telefono: document.querySelector("#correo").value,
-        ciudad: document.querySelector("#contrasena").value,
-    };
-
-    // Almacenar datos del cliente y del carrito en el LocalStorage
-    const pedido = {
-        cliente: datosCliente,
-        productos: productosEnCarrito,
-    };
-
-    localStorage.setItem("pedido", JSON.stringify(pedido));
-
-    // Redirigir al panel de administrador
-    window.location.href = "administrador.html";
+function obtenerDatosCarrito() {
+    const productosCarrito = [];
+  
+    if (productosEnCarrito && productosEnCarrito.length > 0) {
+      productosEnCarrito.forEach(producto => {
+        productosCarrito.push({
+          titulo: producto.titulo,
+          cantidad: producto.cantidad
+        });
+      });
+    }
+  
+    return productosCarrito;
 }
-
-// ...
